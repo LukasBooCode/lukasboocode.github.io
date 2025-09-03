@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: block flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(115, 221, 115);
+}
+
+a:active {
+    color: orange;
+}
+
+.current_link {
+    color: red;
+}
