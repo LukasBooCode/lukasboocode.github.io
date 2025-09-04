@@ -1,31 +1,18 @@
 body {
     font-family: sans-serif;
-    background-color: black;
-}
-
-p {
-    font-size: 20px;
-    margin: 5px;
+    background-image: url('resources/sr5z6b0fd3d84caws3.gif');
+    image-rendering: pixelated;
+    background-size: 50%;
+    background-attachment: fixed;
 }
 
 .current_page {
-    color: red;
+    color: #DBC9CBFF;
 }
 
-.navigation_bar {
-    text-align: center;
-}
-
-.title_card {
-    text-align: center;
-    min-width: 800px;
-    font-size: 30px;
-}
-
-.tile {
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1%;
+.container {
+    background-color: #3B4A58FF;
+    margin: auto;
+    max-width: 1152px;
+    color: #C9DBD9FF;
 }
