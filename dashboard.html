@@ -4,36 +4,117 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Most Awesomest Website On The Planet!!!</title>
+    <title>The Most Awesome Website On The Planet</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .gridded {
+            display: grid;
+            grid-template-areas:
+                "First_Year_Progress First_Year_Progress"
+                "Credits_Obtained NBSA"
+                "EC_Progress EC_Min";
+            grid-template-columns: auto auto;
+        }
+
+        .gridded>div {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .gridded>div.introductory {
+            grid-area: First_Year_Progress;
+            font-size: 50px;
+        }
+
+        .gridded>div.credits {
+            grid-area: Credits_Obtained;
+        }
+
+        .gridded>div.nbsa {
+            grid-area: NBSA;
+        }
+
+        .gridded>div.ecprogress {
+            grid-area: EC_Progress;
+        }
+
+        .gridded>div.ecmin {
+            grid-area: EC_Min;
+        }
+
+        .gridded_progress {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>NAVIGATION</h1>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="profile.html">PROFILE</a></li>
-                <li><a class="current_link" href="dashboard.html">DASHBOARD</a></li>
-                <li><a href="blog_main.html">BLOG</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </div>
+    <header class="title_card tile">
+        <h1>THE MOST AWESOME WEBSITE ON THE PLANET</h1>
     </header>
+    <section class="navigation_bar tile">
+        <h1>NAVIGATION</h1>
+        <a href="index.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a class="current_page" href="dashboard.html">DASHBOARD</a>
+        <a href="blog_main.html">BLOG</a>
+        <a href="faq.html">FAQ</a>
+    </section>
     <main>
+        <div class="tile gridded">
+            <div class="introductory">First Year Progress</div>
+            <div class="credits">Credits</div>
+            <div class="nbsa">NBSA</div>
+            <div class="ecprogress">0EC/60EC</div>
+            <div class="ecmin">0EC/45EC</div>
+        </div>
+        <div class="tile">
+            <h2>First Quarter</h2>
+            <div class= gridded_progress>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            </div>
+            
+            <h2>Second Quarter</h2>
+            <div class= gridded_progress>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            </div>
+            
+            <h2>Third Quarter</h2>
+            <div class= gridded_progress>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            </div>
+            
+            <h2>Fourth Quarter</h2>
+            <div class= gridded_progress>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            <div>First Quarter</div>
+            </div>
+        </div>
     </main>
-    <aside class="unimportant">
-        <p>Sssssssshhhh!!! "They" *want* me to link stuff in some sort of "&lt;aside&gt;"
-            thing, so I just put it down here so it doesn't bother me.
-        <p>
-        <ul>
-            <li><a href="https://oer.hz.nl/" target="_blank">Cource and Examination Regulations &lpar;yaaaawwwwwwwwwwnnnnnnn&rpar;</a></li>
-            <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">IR &lpar;not infrared&rpar;</a></li>
-            <li><a href="https://learn.hz.nl/" target="_blank">"This Learn Environment"</a></li>
-            <li><a href="https://hz.osiris-student.nl/voortgang" target="_blank">My sLOW Progress</a></li>
-            <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Shameless Self-Promotion</a></li>
-        </ul>
+    <aside class="tile">
+        <a href="https://oer.hz.nl/" target="_blank">Course and Examination Regulations</a>
+        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+            target="_blank">Implementation Regulations</a>
+        <a href="https://learn.hz.nl/" target="_blank">This Learn Environment</a>
+        <a href="https://hz.osiris-student.nl/voortgang" target="_blank">My Progress</a>
+        <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub page</a>
     </aside>
 </body>
 
