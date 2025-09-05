@@ -1,18 +1,83 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(fonts/FredokaOne-Regular.otf) format("opentype")
+}
+
+.default-color-theme {
+    color: #e8fffc;
+    background-color: #3b4a58;
+}
+
 body {
-    font-family: sans-serif;
     background-image: url('resources/sr5z6b0fd3d84caws3.gif');
     image-rendering: pixelated;
     background-size: 50%;
     background-attachment: fixed;
 }
 
-.current_page {
-    color: #DBC9CBFF;
+nav {
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 185, 153);
+}
+
+.current-page {
+    color: #feeaed;
 }
 
 .container {
-    background-color: #3B4A58FF;
-    margin: auto;
-    max-width: 1152px;
-    color: #C9DBD9FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container>.content {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 900px;
+    min-width: 400px;
+    font-family: "Fredoka";
+    font-size: x-large;
+}
+
+.container>header {
+    flex: 0 0 250px;
+    font-family: "Trebuchet MS";
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 10px;
+    height: 60px;
+    align-self: flex-start;
+}
+
+.container>aside {
+    flex: 0 0 250px;
+    font-family: "Trebuchet MS";
+    margin: 10px;
+    font-size: 15px;
+    line-height: 10px;
+    text-indent: 10px;
+    align-self: flex-end;
+}
+
+.compact-list {
+    list-style-type: square;
+    padding-left: 25px;
+    line-height: 18px;
+    text-indent: 0;
+    font-size: 15px;
+}
+
+.compact-list>li+li {
+    margin-top: 5px;
+}
+
+.campfire-side {
+    flex-grow: 1;
+    background-color: #222034;
 }
