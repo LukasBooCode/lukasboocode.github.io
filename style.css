@@ -3,6 +3,11 @@
     src: url(fonts/FredokaOne-Regular.otf) format("opentype")
 }
 
+@font-face {
+    font-family: InterVariable;
+    src: url(fonts/InterVariable.ttf) format("truetype")
+}
+
 .default-color-theme {
     color: #e8fffc;
     background-color: #3b4a58;
@@ -51,8 +56,8 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 900px;
-    font-family: "Fredoka";
-    font-size: x-large;
+    font-family: 'Fredoka', 'sans-serif';
+    font-size: 21px;
 }
 
 .container>header {
@@ -98,4 +103,36 @@ footer {
     padding-right: 20px;
     border: 10px outset #ffcea7;
     width: fit-content;
+}
+
+.main-faq-text {
+    font-family: 'InterVariable', 'Trebuchet MS', 'sans-serif';
+    font-size: 17px;
+}
+
+.text-left-figure-right {
+    display: grid;
+    grid-template-areas: "text-content figure-content";
+}
+
+.text-left-figure-right>.text-left {
+    grid-area: text-content;
+}
+
+.text-left-figure-right>figure {
+    grid-area: figure-content;
+}
+
+.simple-enclosed-figure>img {
+    border: 2px solid #bbcad9;
+    width: 100%;
+}
+
+.simple-enclosed-figure>figcaption {
+    border: 2px solid #bbcad9;
+    margin-top: -6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-indent: 4px;
+    width: 100%;
 }
