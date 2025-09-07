@@ -8,6 +8,11 @@
     background-color: #3b4a58;
 }
 
+#authorship-theme {
+    color: #e8fffc;
+    background-color: #222034;
+}
+
 body {
     background-image: url('resources/sr5z6b0fd3d84caws3.gif');
     image-rendering: pixelated;
@@ -20,7 +25,14 @@ nav {
 }
 
 a {
-    color: rgb(255, 185, 153);
+    color: #ffb999;
+}
+
+footer {
+    background-image: linear-gradient(0deg, #222034 95%, #3b4a58);
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 
 .current-page {
@@ -39,14 +51,13 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 900px;
-    min-width: 400px;
     font-family: "Fredoka";
     font-size: x-large;
 }
 
 .container>header {
     flex: 0 0 250px;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     margin: 10px;
     font-size: 18px;
     text-align: center;
@@ -57,7 +68,7 @@ a {
 
 .container>aside {
     flex: 0 0 250px;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     margin: 10px;
     font-size: 15px;
     line-height: 10px;
@@ -77,7 +88,14 @@ a {
     margin-top: 5px;
 }
 
-.campfire-side {
-    flex-grow: 1;
-    background-color: #222034;
+.authorship-menu {
+    line-height: 10px;
+    text-indent: 20px;
+}
+
+.enclosed-authorship-figure {
+    padding-top: 20px;
+    padding-right: 20px;
+    border: 10px outset #ffcea7;
+    width: fit-content;
 }
