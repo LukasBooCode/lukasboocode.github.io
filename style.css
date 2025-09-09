@@ -143,15 +143,63 @@ footer {
     background-color: #bbcad9;
 }
 
-.captioned-figure>figcaption {
-    padding: 2px;
+.captioned-figure>figcaption { 
+    padding: 2px; 
 }
+
+/* CSS used in dashboard.html to structure and style the Study Overview */
+
+.progress-simplified {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.obtained {background-color: ivory; color: #4353A2;}
+.unobtained {background-color: #dc143c; color: #FFFFFA}
+.taken {background-color: ivory; color: #4353A2;}
+.untaken {background-color: #6a5acd; color:#FFFFFA}
+.toberetaken {background-color: crimson; color: #FFFFFA}
+
+/* CSS for the Dashboard legend. */
+
+.legend-section {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+}
+
+.legend-section p {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.ec-legend {
+    grid-column: 2 / 4;
+}
+
+.test-legend {
+    grid-column: 5 / 8;
+}
+
+.ec-legend, .test-legend {
+    display: flex;
+}
+
+.legend-color {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+/* CSS for the Dashboard overview. */
 
 .overview {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    text-align: center;
 
-    background-color: red;
+    background-color: #dda0dd;
+    color: #003D03;
 }
 
 .overview > .quarter {
@@ -160,7 +208,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 
-    background-color: black;
+    background-color: #afeeee;
+    color: #3D561A;
 }
 
 .overview > .quarter > .course {
@@ -168,8 +217,6 @@ footer {
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
-    background-color: blue;
 }
 
 .overview > .quarter > .course > .test {
@@ -177,6 +224,35 @@ footer {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
 
-    background-color: green;
+.overview > * {
+    border: 1px solid black;
+    margin: 0px;
+}
+
+/* CSS used in blog.html to display blog posts */
+
+.blog-list > * {
+    border: 2px solid ivory;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.blog-list > * + * {
+    margin-top: 5px;
+}
+
+.blog-post > * {
+    margin: 5px;
+}
+
+.blog-excerpt > a {
+    color: #e8fffc;
+}
+
+.blog-post > .post-date {
+    color: pink;
+    opacity: 0.75;
+    font-style: italic;
 }

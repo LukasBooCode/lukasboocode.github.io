@@ -32,7 +32,39 @@
             </nav>
             <main>
                 <section class="readable-text">
-                    <h2>DASHBOARD</h2>\
+                    <h2>DASHBOARD</h2>
+                    <h3>Study overview</h3>
+                    <div class="progress-simplified">
+                        <div class="pbsa">
+                            <h3>PBSA</h3>
+                            <p>0/60 EC</p>
+                            <p>Satisfy this requirement, and they're obligated to let you pass.</p>
+                        </div>
+                        <div class="nbsa">
+                            <h3>NBSA</h3>
+                            <p>0/45 EC</p>
+                            <p>Fail to satisfy this requirement, and you're obligated to F off.</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="legend-section">
+                        <div class="ec-legend">
+                            <p>EC</p>
+                            <div class="legend-color obtained"></div>
+                            <p>Obtained</p>
+                            <div class="legend-color unobtained"></div>
+                            <p>Unobtained</p>
+                        </div>
+                        <div class="test-legend">
+                            <p>Test</p>
+                            <div class="legend-color taken"></div>
+                            <p>Taken</p>
+                            <div class="legend-color untaken"></div>
+                            <p>Untaken</p>
+                            <div class="legend-color toberetaken"></div>
+                            <p>To be retaken</p>
+                        </div>
+                    </div>
                     <div class="overview">
                         <p>Qtr</p>
                         <p>Course</p>
@@ -42,31 +74,33 @@
                         <p>Min. Score</p>
                         <p>Grade</p>
                         <div class="quarter">
+                            <!-- IF YOU NEED TO CUSTOMIZE THE CONTENT OF A CELL THAT'S "MADE OF" A PARAGRAPH
+                             THEN PUT THE PARAGRAPH INSIDE A DIV. -->
                             <p>Q1</p>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Program- & Career Orientation</p>
                                 <p>2.5</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Presentation</p>
                                     <p>100%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Computer Science Basics</p>
                                 <p>5</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Written knowledge test</p>
                                     <p>100%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Programming Basics</p>
                                 <p>5</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Written knowledge test</p>
                                     <p>100%</p>
                                     <p>5.5</p>
@@ -76,16 +110,16 @@
                         </div>
                         <div class="quarter">
                             <p>Q2</p>
-                            <div class="course">
-                                <p>Object-Oriented Porgramming</p>
+                            <div class="course unobtained">
+                                <p>Object-Oriented Programming</p>
                                 <p>10</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Presentation</p>
                                     <p>50%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Written knowledge test</p>
                                     <p>50%</p>
                                     <p>5.5</p>
@@ -95,22 +129,22 @@
                         </div>
                         <div class="quarter">
                             <p>Q3</p>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Framework Project 1</p>
                                 <p>10</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Written knowledge test</p>
                                     <p>50%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Presentation</p>
                                     <p>25%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>25%</p>
                                     <p>5.5</p>
@@ -120,44 +154,44 @@
                         </div>
                         <div class="quarter">
                             <p>Q4</p>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Personal Professional Development Exploration</p>
                                 <p>12.5</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Criterion-referenced interview</p>
                                     <p>100%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Framework Project 2</p>
                                 <p>10</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Presentation</p>
                                     <p>25%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
 
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>25%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
 
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>50%</p>
                                     <p>5.5</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>Business Understanding Basics</p>
                                 <p>2.5</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Assignment</p>
                                     <p>100%</p>
                                     <p>5.5</p>
@@ -167,70 +201,70 @@
                         </div>
                         <div class="quarter">
                             <p>TBD</p>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality Projectweek 1</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality International week</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality 1</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality 2</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality Projectweek 2</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality 3</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="course">
+                            <div class="course unobtained">
                                 <p>IT Personality 4</p>
                                 <p>1.25</p>
-                                <div class="test">
+                                <div class="test untaken">
                                     <p>Portfolio</p>
                                     <p>100%</p>
                                     <p>Pass</p>

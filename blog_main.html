@@ -4,117 +4,107 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Most Awesome Website On The Planet</title>
+    <meta name="description" content="Lukas Schuurman's Portfolio Website" />
+    <meta name="author" content="Lukas Schuurman">
+    <!-- <meta name="keywords" content=""> TO BE DETERMINED -->
+
+    <title>[HOME] Lukas' Corner</title>
+
+    <link rel="icon" type="ïmage/x-icon" href="/resources/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-        .blogpost {}
-
-        .blogpost>hr {
-            background-color: black;
-            height: 5px;
-        }
-
-        .blogpost>div {
-            display: flex;
-            justify-content: space-between;
-            padding-left: 5px;
-        }
-
-        .blogpost>p {
-            font-size: 20px;
-            margin-top: -10px;
-        }
-
-        .rightalignedlink {
-            margin-top: 15px;
-            font-size: 20px;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="title_card tile">
-        <h1>THE MOST AWESOME WEBSITE ON THE PLANET</h1>
-    </header>
-    <section class="navigation_bar tile">
-        <h1>NAVIGATION</h1>
-        <a href="index.html">HOME</a>
-        <a href="profile.html">PROFILE</a>
-        <a href="dashboard.html">DASHBOARD</a>
-        <a class="current_page" href="blog_main.html">BLOG</a>
-        <a href="faq.html">FAQ</a>
-    </section>
-    <main>
-        <div class="tile">
-            <div style="display: flex; padding-left: 10px">
-                <h2>My Opinions</h2>
-                <h4>&lpar;snort&rpar;</h4>
-            </div>
-            <div class="blogpost">
-                <hr>
-                <div>
-                    <h3>Programming Experience</h3>
-                    <a href="blog/experience.html">
-                        <p class="rightalignedlink">read more >>></p>
-                    </a>
-                </div>
-                <p>I had some experience with C++.</p>
-            </div>
+    <div class="container">
 
-            <div class="blogpost">
-                <hr>
-                <div>
-                    <h3>First Feedback</h3>
-                    <a href="blog/firstfeedback.html">
-                        <p class="rightalignedlink">read more >>></p>
-                    </a>
-                </div>
-                <p>I had some experience with C++.</p>
-            </div>
+        <header class="default-color-theme">
+            <h1>Lukas' Corner</h1>
+        </header>
 
-            <div class="blogpost">
-                <hr>
-                <div>
-                    <h3>ICT As A Field</h3>
-                    <a href="blog/experience.html">
-                        <p class="rightalignedlink">read more >>></p>
-                    </a>
-                </div>
-                <p>I had some experience with C++.</p>
-            </div>
-
-            <div class="blogpost">
-                <hr>
-                <div>
-                    <h3>Study Choice Justification</h3>
-                    <a href="blog/studychoice.html">
-                        <p class="rightalignedlink">read more >>></p>
-                    </a>
-                </div>
-                <p>I had some experience with C++.</p>
-            </div>
-
-            <div class="blogpost">
-                <hr>
-                <div>
-                    <h3>SWOT</h3>
-                    <a href="blog/swot.html">
-                        <p class="rightalignedlink">read more >>></p>
-                    </a>
-                </div>
-                <p>I had some experience with C++.</p>
-            </div>
+        <div class="content default-color-theme">
+            <nav>
+                <h2>NAVIGATION</h2>
+                <a href="index.html">HOME</a>
+                <a href="profile.html">PROFILE</a>
+                <a href="dashboard.html">DASHBOARD</a>
+                <a class="current-page" href="blog_main.html">BLOG</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <main>
+                <section class="readable-text">
+                    <h2>BLOG</h2>
+                    <div class="blog-list">
+                        <div class="blog-post">
+                            <h3 class="blog-title">Study Choice</h3>
+                            <div class="blog-excerpt">
+                                <a href="blog/studychoice.html">All paths begin with a choice...</a>
+                            </div>
+                            <p class="post-date">posted on: </p>
+                        </div>
+                        <div class="blog-post">
+                            <h3 class="blog-title">SWOT</h3>
+                            <div class="blog-excerpt">
+                                <a href="blog/swot.html">SWAT TEAM OPEN U-- oh wait wrong abbreviation nvm... :p</a>
+                            </div>
+                            <p class="post-date">posted on: </p>
+                        </div>
+                        <div class="blog-post">
+                            <h3 class="blog-title">Programming Experience</h3>
+                            <div class="blog-excerpt">
+                                <a href="blog/experience.html">Experience in hands-on practice with yada yada...</a>
+                            </div>
+                            <p class="post-date">posted on: </p>
+                        </div>
+                        <div class="blog-post">
+                            <h3 class="blog-title">First feedback</h3>
+                            <div class="blog-excerpt">
+                                <a href="blog/firstfeedback.html">Positive feedback loop loop loop ooopdp poop popp dfdfd</a>
+                            </div>
+                            <p class="post-date">posted on: </p>
+                        </div>
+                        <div class="blog-post">
+                            <h3 class="blog-title">ICT field of work</h3>
+                            <div class="blog-excerpt">
+                                <a href="blog/ictasafield.html">ICT field field asdadfadsfs</a>
+                            </div>
+                            <p class="post-date">posted on: </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p style="position: relative; top: 50px;">programming and layout by Lukas Schuurman</p>
+                <figure>
+                    <img src="resources/Pixel Art Westen Fry.gif" alt="CAMPFIRE IMAGE">
+                </figure>
+                <a style="position: relative; top: -15px;" href="authorship.html">assets used</a>
+            </footer>
         </div>
-    </main>
-    <aside class="tile">
-        <a href="https://oer.hz.nl/" target="_blank">Course and Examination Regulations</a>
-        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
-            target="_blank">Implementation Regulations</a>
-        <a href="https://learn.hz.nl/" target="_blank">This Learn Environment</a>
-        <a href="https://hz.osiris-student.nl/voortgang" target="_blank">My Progress</a>
-        <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub page</a>
-    </aside>
+
+        <aside class="default-color-theme">
+            <h2>Related</h2>
+            <ul class="compact-list">
+                <li>
+                    <a href="https://oer.hz.nl/" target="_blank">HZ HBO-ICT Course and Examination Regulations
+                        &lpar;CER&rpar;</a>
+                </li>
+                <li>
+                    <a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f" target="_blank">HZ HBO-ICT
+                        Implementation Regulations &lpar;IR&rpar; 2025-2026</a>
+                </li>
+                <li>
+                    <a href="https://learn.hz.nl/" target="_blank">HZ Learn Environment</a>
+                </li>
+                <li>
+                    <a href="https://hz.osiris-student.nl/voortgang" target="_blank">HZ Study Progress Page</a>
+                </li>
+                <li>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub Environment</a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
 </body>
 
 </html>
