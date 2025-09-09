@@ -4,118 +4,276 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Most Awesome Website On The Planet</title>
+    <meta name="description" content="Lukas Schuurman's Portfolio Website" />
+    <meta name="author" content="Lukas Schuurman">
+    <!-- <meta name="keywords" content=""> TO BE DETERMINED -->
+
+    <title>[DASHBOARD] Lukas' Corner</title>
+
+    <link rel="icon" type="ïmage/x-icon" href="/resources/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-        .gridded {
-            display: grid;
-            grid-template-areas:
-                "First_Year_Progress First_Year_Progress"
-                "Credits_Obtained NBSA"
-                "EC_Progress EC_Min";
-            grid-template-columns: auto auto;
-        }
-
-        .gridded>div {
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .gridded>div.introductory {
-            grid-area: First_Year_Progress;
-            font-size: 50px;
-        }
-
-        .gridded>div.credits {
-            grid-area: Credits_Obtained;
-        }
-
-        .gridded>div.nbsa {
-            grid-area: NBSA;
-        }
-
-        .gridded>div.ecprogress {
-            grid-area: EC_Progress;
-        }
-
-        .gridded>div.ecmin {
-            grid-area: EC_Min;
-        }
-
-        .gridded_progress {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="title_card tile">
-        <h1>THE MOST AWESOME WEBSITE ON THE PLANET</h1>
-    </header>
-    <section class="navigation_bar tile">
-        <h1>NAVIGATION</h1>
-        <a href="index.html">HOME</a>
-        <a href="profile.html">PROFILE</a>
-        <a class="current_page" href="dashboard.html">DASHBOARD</a>
-        <a href="blog_main.html">BLOG</a>
-        <a href="faq.html">FAQ</a>
-    </section>
-    <main>
-        <div class="tile">
-        <div class="gridded">
-            <div class="introductory">First Year Progress</div>
-            <div class="credits">Credits</div>
-            <div class="nbsa">NBSA</div>
-            <div class="ecprogress">0EC/60EC</div>
-            <div class="ecmin">0EC/45EC</div>
+    <div class="container">
+
+        <header class="default-color-theme">
+            <h1>Lukas' Corner</h1>
+        </header>
+
+        <div class="content default-color-theme">
+            <nav>
+                <h2>NAVIGATION</h2>
+                <a href="index.html">HOME</a>
+                <a href="profile.html">PROFILE</a>
+                <a class="current-page" href="dashboard.html">DASHBOARD</a>
+                <a href="blog_main.html">BLOG</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <main>
+                <section class="readable-text">
+                    <h2>DASHBOARD</h2>\
+                    <div class="overview">
+                        <p>Qtr</p>
+                        <p>Course</p>
+                        <p>EC</p>
+                        <p>Test</p>
+                        <p>Weigh</p>
+                        <p>Min. Score</p>
+                        <p>Grade</p>
+                        <div class="quarter">
+                            <p>Q1</p>
+                            <div class="course">
+                                <p>Program- & Career Orientation</p>
+                                <p>2.5</p>
+                                <div class="test">
+                                    <p>Presentation</p>
+                                    <p>100%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>Computer Science Basics</p>
+                                <p>5</p>
+                                <div class="test">
+                                    <p>Written knowledge test</p>
+                                    <p>100%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>Programming Basics</p>
+                                <p>5</p>
+                                <div class="test">
+                                    <p>Written knowledge test</p>
+                                    <p>100%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quarter">
+                            <p>Q2</p>
+                            <div class="course">
+                                <p>Object-Oriented Porgramming</p>
+                                <p>10</p>
+                                <div class="test">
+                                    <p>Presentation</p>
+                                    <p>50%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                                <div class="test">
+                                    <p>Written knowledge test</p>
+                                    <p>50%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quarter">
+                            <p>Q3</p>
+                            <div class="course">
+                                <p>Framework Project 1</p>
+                                <p>10</p>
+                                <div class="test">
+                                    <p>Written knowledge test</p>
+                                    <p>50%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                                <div class="test">
+                                    <p>Presentation</p>
+                                    <p>25%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>25%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quarter">
+                            <p>Q4</p>
+                            <div class="course">
+                                <p>Personal Professional Development Exploration</p>
+                                <p>12.5</p>
+                                <div class="test">
+                                    <p>Criterion-referenced interview</p>
+                                    <p>100%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>Framework Project 2</p>
+                                <p>10</p>
+                                <div class="test">
+                                    <p>Presentation</p>
+                                    <p>25%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>25%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>50%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>Business Understanding Basics</p>
+                                <p>2.5</p>
+                                <div class="test">
+                                    <p>Assignment</p>
+                                    <p>100%</p>
+                                    <p>5.5</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quarter">
+                            <p>TBD</p>
+                            <div class="course">
+                                <p>IT Personality Projectweek 1</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality International week</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality 1</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality 2</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality Projectweek 2</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality 3</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <p>IT Personality 4</p>
+                                <p>1.25</p>
+                                <div class="test">
+                                    <p>Portfolio</p>
+                                    <p>100%</p>
+                                    <p>Pass</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p style="position: relative; top: 50px;">programming and layout by Lukas Schuurman</p>
+                <figure>
+                    <img src="resources/Pixel Art Westen Fry.gif" alt="CAMPFIRE IMAGE">
+                </figure>
+                <a style="position: relative; top: -15px;" href="authorship.html">assets used</a>
+            </footer>
         </div>
-            <h2>First Quarter</h2>
-            <div class=gridded_progress>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-            </div>
 
-            <h2>Second Quarter</h2>
-            <div class=gridded_progress>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-            </div>
+        <aside class="default-color-theme">
+            <h2>Related</h2>
+            <ul class="compact-list">
+                <li>
+                    <a href="https://oer.hz.nl/" target="_blank">HZ HBO-ICT Course and Examination Regulations
+                        &lpar;CER&rpar;</a>
+                </li>
+                <li>
+                    <a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f" target="_blank">HZ HBO-ICT
+                        Implementation Regulations &lpar;IR&rpar; 2025-2026</a>
+                </li>
+                <li>
+                    <a href="https://learn.hz.nl/" target="_blank">HZ Learn Environment</a>
+                </li>
+                <li>
+                    <a href="https://hz.osiris-student.nl/voortgang" target="_blank">HZ Study Progress Page</a>
+                </li>
+                <li>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub Environment</a>
+                </li>
+            </ul>
+        </aside>
 
-            <h2>Third Quarter</h2>
-            <div class=gridded_progress>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-            </div>
-
-            <h2>Fourth Quarter</h2>
-            <div class=gridded_progress>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-                <div>First Quarter</div>
-            </div>
-        </div>
-    </main>
-    <aside class="tile">
-        <a href="https://oer.hz.nl/" target="_blank">Course and Examination Regulations</a>
-        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
-            target="_blank">Implementation Regulations</a>
-        <a href="https://learn.hz.nl/" target="_blank">This Learn Environment</a>
-        <a href="https://hz.osiris-student.nl/voortgang" target="_blank">My Progress</a>
-        <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub page</a>
-    </aside>
+    </div>
 </body>
 
 </html>

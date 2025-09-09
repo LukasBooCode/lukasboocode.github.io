@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Fredoka;
     src: url(fonts/FredokaOne-Regular.otf) format("opentype")
@@ -55,7 +59,7 @@ footer {
     margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 900px;
+    width: 1200px;
     font-family: 'Fredoka', 'sans-serif';
     font-size: 21px;
 }
@@ -105,39 +109,74 @@ footer {
     width: fit-content;
 }
 
-.main-faq-text {
+.readable-text {
     font-family: 'InterVariable', 'Trebuchet MS', 'sans-serif';
     font-size: 17px;
 }
 
-.main-home-text {
+.readable-text {
     font-family: 'InterVariable', 'Trebuchet MS', 'sans-serif';
     font-size: 17px;
 }
 
-.text-left-figure-right {
+.text-acc-figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-acc-figure>div {
+    flex: 50%;
+}
+
+.captioned-figure {
+    border: 2px solid #bbcad9;
+}
+
+.captioned-figure>img {
+    width: 100%;
+    display: block;
+}
+
+.captioned-figure>div {
+    height: 2px;
+    background-color: #bbcad9;
+}
+
+.captioned-figure>figcaption {
+    padding: 2px;
+}
+
+.overview {
     display: grid;
-    grid-template-areas: "text-content figure-content";
+    grid-template-columns: repeat(7, 1fr);
+
+    background-color: red;
 }
 
-.text-left-figure-right>.text-left {
-    grid-area: text-content;
+.overview > .quarter {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    background-color: black;
 }
 
-.text-left-figure-right>figure {
-    grid-area: figure-content;
+.overview > .quarter > .course {
+    grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    background-color: blue;
 }
 
-.simple-enclosed-figure>img {
-    border: 2px solid #bbcad9;
-    width: 100%;
-}
+.overview > .quarter > .course > .test {
+    grid-column: 3 / -1;
 
-.simple-enclosed-figure>figcaption {
-    border: 2px solid #bbcad9;
-    margin-top: -6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-indent: 4px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background-color: green;
 }

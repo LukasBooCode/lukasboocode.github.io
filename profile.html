@@ -4,66 +4,111 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Most Awesome Website On The Planet</title>
+    <meta name="description" content="Lukas Schuurman's Portfolio Website" />
+    <meta name="author" content="Lukas Schuurman">
+    <!-- <meta name="keywords" content=""> TO BE DETERMINED -->
+
+    <title>[PROFILE] Lukas' Corner</title>
+
+    <link rel="icon" type="ïmage/x-icon" href="/resources/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-        .disguised_button_input {
-            border: none;
-            background-color: transparent;
-        }
-
-        .disguised_button_label {
-            text-align: right;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="title_card tile">
-        <h1>THE MOST AWESOME WEBSITE ON THE PLANET</h1>
-    </header>
-    <section class="navigation_bar tile">
-        <h1>NAVIGATION</h1>
-        <a href="index.html">HOME</a>
-        <a class="current_page" href="profile.html">PROFILE</a>
-        <a href="dashboard.html">DASHBOARD</a>
-        <a href="blog_main.html">BLOG</a>
-        <a href="faq.html">FAQ</a>
-    </section>
-    <main>
-        <div class="tile">
-            <h2>Profile</h2>
-            <p>My name is Lukas Schuurman. I'm 22 years old. Highly unremarkable.</p>
-            <p>Don't feel like putting more here.</p>
+    <div class="container">
 
-            <h2>Last Wednesday</h2>
-            <p>As is tradition, when one introduces themselves, they are always required to list off all their
-                characteristics and how super duper awesome they are. SCREW THAT. I'll just tell you how my trip to the
-                grocery store last wednesday went. 2025-09-03, to be specific.</p>
-            <p>YearMonthDate notation, for the Am*ericans.</p>
-            <h2>THE SHOPPING LIST</h2>
-            <h6>If you are wondering why it's ordered, it's because I think beforehand the most efficient route to get
-                the stuff in order to not waste too much time on UNPRODUCTIVE THINGS, as we are taught to do in this
-                capitalistic chroma nightmare we call society.</h6>
-            <ol>
-                <li>1kg Potatoes</li>
-                <li>Some Brussel Sprouts. Just a few.</li>
-                <li>yaaawwnwn i'm bored goodbye</li>
-            </ol>
-            <h2>Where to find me</h2>
-            <a href="https://github.com/LukasBooCode" target="_blank">GitHub</a>
-            <a href="myspace.html">MySpace</a>
+        <header class="default-color-theme">
+            <h1>Lukas' Corner</h1>
+        </header>
+
+        <div class="content default-color-theme">
+            <nav>
+                <h2>NAVIGATION</h2>
+                <a href="index.html">HOME</a>
+                <a class="current-page" href="profile.html">PROFILE</a>
+                <a href="dashboard.html">DASHBOARD</a>
+                <a href="blog_main.html">BLOG</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <main>
+                <section class="readable-text">
+                    <h2>PROFILE</h2>
+                    <h3>Who am I?</h3>
+                    <div class="text-acc-figure">
+                        <div>
+                            <p>My name is Lukas Schuurman. I'm 22 years old. Unremarkable.
+                                Don't feel like putting more here.</p>
+                            <p>I enjoy entertainment in many different media. My favourite movie is the Matrix, blah
+                                blah. But everyone knows that movie. It's nothing novel. So instead of talking about
+                                that, here is a list of the
+                                list of furry visual novels that I've played.</p>
+                            <ul>
+                                <li>Echo</li>
+                                <li>Burrows</li>
+                                <li>9:22</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <figure class="captioned-figure">
+                                <img src="" alt="ME STANDING NEXT TO BUDDHA STATUE LIKE A TOTAL LOSER">
+                                <div></div>
+                                <figcaption>Just try'na find some Enlightenment in this capitalist chroma nightmare we
+                                    call society.</figcaption>
+                            </figure>
+                            <figure class="captioned-figure">
+                                <img src="" alt="PHOTO OF 'HAPPINESS BEYOND THOUGHT' BY GARY WEBER">
+                                <div></div>
+                                <figcaption>Words of the Sensei.</figcaption>
+                            </figure>
+                            <figure class="captioned-figure">
+                                <img src="" alt="PHOTO OF TAIGAXHOLIC">
+                                <div></div>
+                                <figcaption>My <s>girl</s>boyfriend &lpar;REAL NOT FAKE&rpar;.</figcaption>
+                            </figure>
+                            <figure class="captioned-figure">
+                                <img src="" alt="PHOTO OF A BUNCH OF FURRY VISUAL NOVELS">
+                                <div></div>
+                                <figcaption>Some of my interests are... obscure. Hehe.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a href="https://github.com/LukasBooCode" target="_blank">GitHub</a>
+                    <a href="myspace.html">MySpace</a>
+                </section>
+            </main>
+            <footer>
+                <p style="position: relative; top: 50px;">programming and layout by Lukas Schuurman</p>
+                <figure>
+                    <img src="resources/Pixel Art Westen Fry.gif" alt="CAMPFIRE IMAGE">
+                </figure>
+                <a style="position: relative; top: -15px;" href="authorship.html">assets used</a>
+            </footer>
         </div>
-    </main>
-    <aside class="tile">
-        <a href="https://oer.hz.nl/" target="_blank">Course and Examination Regulations</a>
-        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
-            target="_blank">Implementation Regulations</a>
-        <a href="https://learn.hz.nl/" target="_blank">This Learn Environment</a>
-        <a href="https://hz.osiris-student.nl/voortgang" target="_blank">My Progress</a>
-        <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub page</a>
-    </aside>
+
+        <aside class="default-color-theme">
+            <h2>Related</h2>
+            <ul class="compact-list">
+                <li>
+                    <a href="https://oer.hz.nl/" target="_blank">HZ HBO-ICT Course and Examination Regulations
+                        &lpar;CER&rpar;</a>
+                </li>
+                <li>
+                    <a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f" target="_blank">HZ HBO-ICT
+                        Implementation Regulations &lpar;IR&rpar; 2025-2026</a>
+                </li>
+                <li>
+                    <a href="https://learn.hz.nl/" target="_blank">HZ Learn Environment</a>
+                </li>
+                <li>
+                    <a href="https://hz.osiris-student.nl/voortgang" target="_blank">HZ Study Progress Page</a>
+                </li>
+                <li>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank">HZ HBO-ICT GitHub Environment</a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
 </body>
 
 </html>
