@@ -69,6 +69,7 @@ footer {
     width: 1200px;
     font-family: 'Fredoka', 'sans-serif';
     font-size: 21px;
+    text-align: justify;
 }
 
 .container>header {
@@ -136,7 +137,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: 
 }
 
 .text-acc-figure>div {
