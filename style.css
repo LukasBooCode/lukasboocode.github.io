@@ -31,6 +31,7 @@ body {
 
 nav {
     text-align: center;
+    font-size: 30px;
 }
 
 a {
@@ -44,10 +45,10 @@ footer {
     font-size: 15px;
 }
 
-h2 {
-    font-size: 40px;
+.readable-text > h2 {
     font-family: 'Fredoka', 'Intervariable', 'sans-serif';
     text-align: center;
+    font-size: 50px;
 }
 
 .current-page {
@@ -91,6 +92,14 @@ h2 {
     align-self: flex-end;
 }
 
+.flexed-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    gap: 10px;
+}
+
 .compact-list {
     list-style-type: square;
     padding-left: 25px;
@@ -127,6 +136,7 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: 
 }
 
 .text-acc-figure>div {
@@ -284,7 +294,7 @@ h2 {
     color: #e8fffc;
 }
 
-.blog-post > .post-date {
+.post-date {
     color: pink;
     opacity: 0.75;
     font-style: italic;
