@@ -44,6 +44,12 @@ footer {
     font-size: 15px;
 }
 
+h2 {
+    font-size: 40px;
+    font-family: 'Fredoka', 'Intervariable', 'sans-serif';
+    text-align: center;
+}
+
 .current-page {
     color: #feeaed;
 }
@@ -111,13 +117,11 @@ footer {
 
 .readable-text {
     font-family: 'InterVariable', 'Trebuchet MS', 'sans-serif';
-    font-size: 17px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.readable-text {
-    font-family: 'InterVariable', 'Trebuchet MS', 'sans-serif';
-    font-size: 17px;
-}
 
 .text-acc-figure {
     display: flex;
@@ -133,7 +137,7 @@ footer {
     border: 2px solid #bbcad9;
 }
 
-.captioned-figure>img {
+.captioned-figure img, .captioned-figure video {
     width: 100%;
     display: block;
 }
@@ -149,9 +153,38 @@ footer {
 
 /* CSS used in dashboard.html to structure and style the Study Overview */
 
-.progress-simplified {
+.study-progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.study-progress-bars * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-title {
+    background-color: purple;
+    font-family: 'Fredoka', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 4px solid white;
+}
+
+.nbsa-counter {
+    background-color: black;
+    width: fit-content;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+    top: -30%;
+    left: 5%;
+    font-size: 50px;
+    font-family: 'Fredoka', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid white;
 }
 
 .obtained {background-color: ivory; color: #4353A2;}
