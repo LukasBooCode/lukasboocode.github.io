@@ -202,11 +202,37 @@ footer {
     border: 2px solid white;
 }
 
+.pbsa-counter {
+    background-color: black;
+    width: fit-content;
+    margin: 0;
+    padding: 25px 10px;
+    position: relative;
+    top: -28%;
+    left: 45%;
+    font-size: 50px;
+    font-family: 'Fredoka', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid white;
+}
+
+.placed-upwards {
+    position: relative;
+    top: -7rem;
+    font-size: 16px;
+    margin-bottom: -80px;
+}
+
+.placed-upwards2 {
+    position: relative;
+    top: -2rem;
+    font-size: 16px;
+}
+
 .obtained {background-color: ivory; color: #4353A2;}
 .unobtained {background-color: #dc143c; color: #FFFFFA}
 .taken {background-color: ivory; color: #4353A2;}
 .untaken {background-color: #6a5acd; color:#FFFFFA}
-.toberetaken {background-color: crimson; color: #FFFFFA}
+.toberetaken {background-color: hsl(22, 83%, 47%); color: #FFFFFA}
 
 /* CSS for the Dashboard legend. */
 
