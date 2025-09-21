@@ -14,12 +14,12 @@
 
 .default-color-theme {
     color: #e8fffc;
-    background-color: #3b4a58;
+    background-color: hsla(209, 20%, 29%, 0.8);
 }
 
 #authorship-theme {
     color: #e8fffc;
-    background-color: #222034;
+    background-color: rgb(34, 32, 52, 0.8);
 }
 
 body {
@@ -44,10 +44,17 @@ a {
 }
 
 footer {
-    background-image: linear-gradient(0deg, #222034 95%, #3b4a58);
+    background-image: linear-gradient(0deg, rgb(34, 32, 52) 95%, rgba(59, 74, 89, 0));
     text-align: center;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 15px;
+}
+
+.nav_separator {
+    background-color: #e8fffc;
+    height: 5px;
+    margin: 40px 20px;
+    border-radius: 20px;
 }
 
 .readable-text > h2 {
@@ -128,6 +135,15 @@ footer {
     padding-right: 20px;
     border: 10px outset #ffcea7;
     width: fit-content;
+}
+
+.enclosed-authorship-figure img {
+    height: auto;
+    max-width: 50%;
+}
+
+.enclosed-authorship-figure > p {
+    line-height: 30px;
 }
 
 .readable-text {
@@ -230,7 +246,7 @@ footer {
 
 .obtained {background-color: ivory; color: #4353A2;}
 .unobtained {background-color: #dc143c; color: #FFFFFA}
-.taken {background-color: ivory; color: #4353A2;}
+.taken {background-color: rgb(164, 252, 255); color: #4C5769;}
 .untaken {background-color: #6a5acd; color:#FFFFFA}
 .toberetaken {background-color: hsl(22, 83%, 47%); color: #FFFFFA}
 
